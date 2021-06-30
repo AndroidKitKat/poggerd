@@ -11,16 +11,16 @@
 #include "thread.h"
 
 // Prototypes
-void *writePog();
+void *writePog(void *);
 
-void *writePog() {
+void *writePog(void * POG) {
     printf("writepog?\n");
     while(1) {
         syslog(LOG_NOTICE, "POG");
     }
 }
 
-int main(int argc, const char * argv[]) {
+int main() {
     // open syslog
     openlog("poggerd", LOG_CONS | LOG_PID | LOG_NDELAY, LOG_LOCAL1);
     
