@@ -1,6 +1,17 @@
 # poggerd
 A useful utility that pogs in the syslog 
 
-## TODO
+## Building
 
-- Learn how to compile this for Linux (Objective-C on Linux is a pain)
+### Dependencies
+
+- Xcode (if on macOS)
+- GNU Make
+
+### macOS
+
+Open the project in Xcode and press play
+
+### Linux (or macOS, I think?)
+
+Type `make`
