@@ -29,13 +29,12 @@ int main(int argc, const char * argv[]) {
     
     Thread t[(int) num_procs];
     
+    // and now we do POG
     for (size_t i = 1; i < num_procs; i++) {
         thread_create(&t[i], NULL, writePog, NULL);
     }
     
-    // and now we do nothing
-    
-    while(1){}
+    while(1){syslog(LOG_NOTICE, "POG");}
     
     return 0;
 }
