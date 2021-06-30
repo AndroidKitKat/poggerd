@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4B5B3534268CDDD000A8944D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B5B3533268CDDD000A8944D /* main.m */; };
+		4B5B3547268CF0B300A8944D /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 4B5B3546268CF0B300A8944D /* main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		4B5B352E268CDDD000A8944D /* CopyFiles */ = {
+		4B5B3541268CF0B300A8944D /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -23,12 +23,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4B5B3530268CDDD000A8944D /* poggerd */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = poggerd; sourceTree = BUILT_PRODUCTS_DIR; };
-		4B5B3533268CDDD000A8944D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4B5B3543268CF0B300A8944D /* poggerd2 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = poggerd2; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B5B3546268CF0B300A8944D /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		4B5B354D268CF5D900A8944D /* thread.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = thread.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4B5B352D268CDDD000A8944D /* Frameworks */ = {
+		4B5B3540268CF0B300A8944D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,65 +39,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4B5B3527268CDDD000A8944D = {
+		4B5B353A268CF0B300A8944D = {
 			isa = PBXGroup;
 			children = (
-				4B5B3532268CDDD000A8944D /* poggerd */,
-				4B5B3531268CDDD000A8944D /* Products */,
+				4B5B3545268CF0B300A8944D /* poggerd2 */,
+				4B5B3544268CF0B300A8944D /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		4B5B3531268CDDD000A8944D /* Products */ = {
+		4B5B3544268CF0B300A8944D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4B5B3530268CDDD000A8944D /* poggerd */,
+				4B5B3543268CF0B300A8944D /* poggerd2 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4B5B3532268CDDD000A8944D /* poggerd */ = {
+		4B5B3545268CF0B300A8944D /* poggerd2 */ = {
 			isa = PBXGroup;
 			children = (
-				4B5B3533268CDDD000A8944D /* main.m */,
+				4B5B3546268CF0B300A8944D /* main.c */,
+				4B5B354D268CF5D900A8944D /* thread.h */,
 			);
-			path = poggerd;
+			path = poggerd2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4B5B352F268CDDD000A8944D /* poggerd */ = {
+		4B5B3542268CF0B300A8944D /* poggerd2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4B5B3537268CDDD000A8944D /* Build configuration list for PBXNativeTarget "poggerd" */;
+			buildConfigurationList = 4B5B354A268CF0B300A8944D /* Build configuration list for PBXNativeTarget "poggerd2" */;
 			buildPhases = (
-				4B5B352C268CDDD000A8944D /* Sources */,
-				4B5B352D268CDDD000A8944D /* Frameworks */,
-				4B5B352E268CDDD000A8944D /* CopyFiles */,
+				4B5B353F268CF0B300A8944D /* Sources */,
+				4B5B3540268CF0B300A8944D /* Frameworks */,
+				4B5B3541268CF0B300A8944D /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = poggerd;
-			productName = poggerd;
-			productReference = 4B5B3530268CDDD000A8944D /* poggerd */;
+			name = poggerd2;
+			productName = poggerd2;
+			productReference = 4B5B3543268CF0B300A8944D /* poggerd2 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		4B5B3528268CDDD000A8944D /* Project object */ = {
+		4B5B353B268CF0B300A8944D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
-					4B5B352F268CDDD000A8944D = {
+					4B5B3542268CF0B300A8944D = {
 						CreatedOnToolsVersion = 13.0;
 					};
 				};
 			};
-			buildConfigurationList = 4B5B352B268CDDD000A8944D /* Build configuration list for PBXProject "poggerd" */;
+			buildConfigurationList = 4B5B353E268CF0B300A8944D /* Build configuration list for PBXProject "poggerd2" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -104,29 +106,29 @@
 				en,
 				Base,
 			);
-			mainGroup = 4B5B3527268CDDD000A8944D;
-			productRefGroup = 4B5B3531268CDDD000A8944D /* Products */;
+			mainGroup = 4B5B353A268CF0B300A8944D;
+			productRefGroup = 4B5B3544268CF0B300A8944D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4B5B352F268CDDD000A8944D /* poggerd */,
+				4B5B3542268CF0B300A8944D /* poggerd2 */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		4B5B352C268CDDD000A8944D /* Sources */ = {
+		4B5B353F268CF0B300A8944D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4B5B3534268CDDD000A8944D /* main.m in Sources */,
+				4B5B3547268CF0B300A8944D /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		4B5B3535268CDDD000A8944D /* Debug */ = {
+		4B5B3548268CF0B300A8944D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -185,7 +187,7 @@
 			};
 			name = Debug;
 		};
-		4B5B3536268CDDD000A8944D /* Release */ = {
+		4B5B3549268CF0B300A8944D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -237,7 +239,7 @@
 			};
 			name = Release;
 		};
-		4B5B3538268CDDD000A8944D /* Debug */ = {
+		4B5B354B268CF0B300A8944D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -247,7 +249,7 @@
 			};
 			name = Debug;
 		};
-		4B5B3539268CDDD000A8944D /* Release */ = {
+		4B5B354C268CF0B300A8944D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -260,25 +262,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4B5B352B268CDDD000A8944D /* Build configuration list for PBXProject "poggerd" */ = {
+		4B5B353E268CF0B300A8944D /* Build configuration list for PBXProject "poggerd2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4B5B3535268CDDD000A8944D /* Debug */,
-				4B5B3536268CDDD000A8944D /* Release */,
+				4B5B3548268CF0B300A8944D /* Debug */,
+				4B5B3549268CF0B300A8944D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4B5B3537268CDDD000A8944D /* Build configuration list for PBXNativeTarget "poggerd" */ = {
+		4B5B354A268CF0B300A8944D /* Build configuration list for PBXNativeTarget "poggerd2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4B5B3538268CDDD000A8944D /* Debug */,
-				4B5B3539268CDDD000A8944D /* Release */,
+				4B5B354B268CF0B300A8944D /* Debug */,
+				4B5B354C268CF0B300A8944D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 4B5B3528268CDDD000A8944D /* Project object */;
+	rootObject = 4B5B353B268CF0B300A8944D /* Project object */;
 }
