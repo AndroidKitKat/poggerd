@@ -5,12 +5,13 @@
 //  Created by skg on 6/30/21.
 //
 
-#import <Foundation/Foundation.h>
+#import <syslog.h>
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+        openlog("poggerd", LOG_CONS | LOG_PID | LOG_NDELAY, LOG_LOCAL1);
+        while(1) {
+            syslog(LOG_NOTICE, "POG");
+        }
     }
-    return 0;
 }
