@@ -11,9 +11,9 @@
 #include "thread.h"
 
 // Prototypes
-void writePog(void);
+void *writePog();
 
-void writePog(void) {
+void *writePog() {
     printf("writepog?\n");
     while(1) {
         syslog(LOG_NOTICE, "POG");
