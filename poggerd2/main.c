@@ -14,7 +14,6 @@
 void *writePog(void *);
 
 void *writePog(void * POG) {
-    printf("writepog?\n");
     while(1) {
         syslog(LOG_NOTICE, "POG");
     }
